@@ -1,6 +1,6 @@
 class Animal:
 
-    def __init__(self, name=None, age_in_months=None, sex=None, biological_class=None, height_in_meters=None, length_in_meters=None, food_per_day_in_kg=None, food_type=None, price_in_UAH=None):
+    def __init__(self, name=None, age_in_months=None, sex=None, biological_class=None, height_in_meters=None, length_in_meters=None, food_per_day_in_kg=None, food_type=None, price_in_uah=None):
         self.name = name
         self.age_in_months = age_in_months
         self.sex = sex
@@ -9,7 +9,7 @@ class Animal:
         self.length_in_meters = length_in_meters
         self.food_per_day_in_kg = food_per_day_in_kg
         self.food_type = food_type
-        self.price_in_UAH = price_in_UAH
+        self.price_in_uah = price_in_uah
 
     def __del__(self):
         return
@@ -23,8 +23,8 @@ class Animal:
         length_in_meters = 'Length: {}\n'.format(self.length_in_meters)
         food_per_day_in_kg = 'Food amount: {}\n'.format(self.food_per_day_in_kg)
         food_type = 'Food type: {}\n'.format(self.food_type)
-        price_in_UAH = 'Price: {}\n'.format(self.price_in_UAH)
-        return name + age_in_months + sex + biological_class + height_in_meters + length_in_meters + food_per_day_in_kg + food_type + price_in_UAH
+        price_in_uah = 'Price: {}\n'.format(self.price_in_uah)
+        return name + age_in_months + sex + biological_class + height_in_meters + length_in_meters + food_per_day_in_kg + food_type + price_in_uah
 
 
 class Bird:
@@ -41,6 +41,7 @@ class Bird:
         nest_form = f'Nest form: {self.nest_form}'
         return wing_span_in_meters + nest_form
 
+
 class Fish:
 
     def __init__(self, caviar_count_per_season=None):
@@ -52,6 +53,7 @@ class Fish:
     def __str__(self):
         caviar_count_per_season = f'Caviar count: {self.caviar_count_per_season}'
         return caviar_count_per_season
+
 
 class Mammal:
 

@@ -1,7 +1,7 @@
 import doctest
-from model.Animal import Animal
-from model.BiologicalClass import BiologicalClass
-from model.Sex import Sex
+from animalShop.model.Animal import Animal
+from animalShop.model.BiologicalClass import BiologicalClass
+from animalShop.model.Sex import Sex
 
 
 class AnimalManager:
